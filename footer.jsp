@@ -1,4 +1,6 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
+<%@ page import="example.*" %>
+
 <footer class="container">
 		<p>&copy; 쇼핑몰 대표 : 공준석, 고유번호 : 20200961, 연락처 : kmch009@sungkyul.ac.kr<br> 
 
@@ -17,6 +19,6 @@
 	}
 	String CT = hour + ":" + minute + ":" + second + " " + am_pm;
 	out.println("현재 접속  시각: " + CT + "\n");
-%>
+   %>
     </p>
 </footer>
