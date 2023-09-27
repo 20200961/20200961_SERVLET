@@ -28,14 +28,6 @@
     <a href="#" class="list-group-item list-group-item-action">나이키 테크</a>
     <a href="#" class="list-group-item list-group-item-action">에어 조던</a>
     </div>
-<div class="container">
-	<div class="jumbotron">
-		<div class="container">
-			<h3 class="display-4">
-				<%=greeting%>
-            </h3>
-		</div>
-	</div>
 <%
 	ArrayList<Product> listOfProducts = productDAO.getAllProducts(); // 리스트에 상품 전체 정보를 얻어온다.
 %> 	
@@ -46,14 +38,20 @@
 					Product product = listOfProducts.get(i);
 			%>
 			<div class="col-md-4">
-				<h3><%=product.getPname()%></h3>
-				<p><%=product.getDescription()%>
-				<p><%=product.getUnitPrice()%>원
-			</div>
-			<%
-				}
-			%>
+				<div class="card bg-dark text-white">
+                        <img src="image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title">나이키 사진 샘플</h5>
+                        <p class="card-text">출처 : 구글 검색</p>
+                        </div>
+                        </div>
+	    <h3><%=product.getPname()%></h3> <!-- 상품 이름 -->
+	    <p><%=product.getDescription()%> <!-- 상품 정보 -->
+	    <p><%=product.getUnitPrice()%>원 <!-- 상품 가격 -->
 		</div>
+        <%
+            }
+        %>
 		<hr>
 	</div>
 
