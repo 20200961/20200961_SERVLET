@@ -1,6 +1,11 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
-<%! String greeting = "Welcome to Web Shopping Mall";
-      String tagline = "Welcome to Web Market!";%>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="dto.Product"%>
+<jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
+<%! String greeting = "NIKE 베스트셀러";
+	String tagline = "하단 페이지 : 확인";%>
+
+
 <div class="jumbotron">
 		<div class="container">
 			<h1 class="display-3">
@@ -13,6 +18,7 @@
     <h5 class="card-title">스니커즈 이벤트</h5>
     <p class="card-text">출처 : 나이키</p>
   </div>
+
 <div class="list-group">
       <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
         러닝 스타일링
@@ -22,5 +28,33 @@
     <a href="#" class="list-group-item list-group-item-action">나이키 테크</a>
     <a href="#" class="list-group-item list-group-item-action">에어 조던</a>
     </div>
+<div class="container">
+	<div class="jumbotron">
+		<div class="container">
+			<h3 class="display-4">
+				<%=greeting%>
+            </h3>
+		</div>
+	</div>
+<%
+	ArrayList<Product> listOfProducts = productDAO.getAllProducts(); // 리스트에 상품 전체 정보를 얻어온다.
+%> 	
+<div class="container">
+		<div class="row" align="center">
+			<%
+				for (int i = 0; i < listOfProducts.size(); i++) {
+					Product product = listOfProducts.get(i);
+			%>
+			<div class="col-md-4">
+				<h3><%=product.getPname()%></h3>
+				<p><%=product.getDescription()%>
+				<p><%=product.getUnitPrice()%>원
+			</div>
+			<%
+				}
+			%>
+		</div>
+		<hr>
+	</div>
 
   
