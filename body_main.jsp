@@ -13,7 +13,7 @@
 			</h1>
 		</div>
     <div class="card bg-dark text-white">
-    <img src="image/104.jpg" class="card-img" alt="...">
+    <img src="image/11.jpg" class="card-img" alt="...">
     <div class="card-img-overlay">
     <h5 class="card-title">스니커즈 이벤트</h5>
     <p class="card-text">출처 : 나이키</p>
