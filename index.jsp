@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8" %>
 <%@ page import="java.util.Date"%>
+<%@ page errorPage = "exception/main_server_downtime.jsp" %>
 
 
 <html>

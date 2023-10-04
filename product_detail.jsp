@@ -3,6 +3,7 @@
 <%@ page import="java.util.Date"%>
 <%@ page import="example.*" %>
 <%@ page errorPage = "exception/product_not_found.jsp" %>
+
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <html>
 <head>
