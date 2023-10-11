@@ -4,14 +4,22 @@ import dto.Product;
 
 public class ProductRepository{
     private ArrayList<Product> listOfProducts = new ArrayList<Product>();
+    private static ProductRepository instance = new ProductRepository();
+
+    public static ProductRepository getInstance(){
+	return instance;
+    }
+
     
     public ProductRepository(){
-        Product Dunk = new Product("P1","Dunk low",130000);
+        product Dunk = new Product("P1","Dunk low",130000);
         Dunk.setDescription("80년대 분위기의 레트로 농구화");
 		Dunk.setCategory("Sneakers");
 		Dunk.setManufacturer("NIKE");
-		Dunk.setUnitsInStock(1000);
+		Dunk.setUnitsInStock(1000);P
 		Dunk.setCondition("New");
+        Dunk.setFilename("P1.jpg");
+
         
         Product Airporce = new Product("P2","Air Porce 1'07",139000);
         Airporce.setDescription("NIKE의 대표 OG 농구화");
@@ -19,6 +27,7 @@ public class ProductRepository{
 		Airporce.setManufacturer("NIKE");
 		Airporce.setUnitsInStock(9000);
 		Airporce.setCondition("New");
+        Airporce.setFilename("P2.jpg");
         
         Product Vapor = new Product("P3","Vapor-fly",299000);
         Vapor.setDescription("엘리트 러너부터 초보 레이서까지 누구나 활용 가능한 로드 레이싱화");
@@ -26,6 +35,7 @@ public class ProductRepository{
 		Vapor.setManufacturer("NIKE");
 		Vapor.setUnitsInStock(3000);
 		Vapor.setCondition("New");
+        Vapor.setFilename("P3.jpg");
         
         listOfProducts.add(Dunk);
 		listOfProducts.add(Airporce);
@@ -49,6 +59,11 @@ public class ProductRepository{
 	public ArrayList<Product> getAllProducts() {
 		return listOfProducts;
 	}
+    
+    public void addProduct(Product product) {
+	listOfProducts.add(product);
+   }
+
 
         
 }
