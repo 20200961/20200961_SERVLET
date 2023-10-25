@@ -12,12 +12,12 @@ public class ProductRepository{
 
     
     public ProductRepository(){
-        product Dunk = new Product("P1","Dunk low",130000);
+        Product Dunk = new Product("P1","Dunk low",130000);
         Dunk.setDescription("80년대 분위기의 레트로 농구화");
 		Dunk.setCategory("Sneakers");
 		Dunk.setManufacturer("NIKE");
-		Dunk.setUnitsInStock(1000);P
-		Dunk.setCondition("New");
+		Dunk.setUnitsInStock(1000);
+        Dunk.setCondition("New");
         Dunk.setFilename("P1.jpg");
 
         
