@@ -4,6 +4,11 @@
 <%@ page import="dao.ProductRepository"%>
 
 <%
+    session.getAttribute("cartlist");
+    if
+    response.sendRedirect("../cart/product_cart.jsp");
+
+
 	String id = request.getParameter("id");
 	if (id == null || id.trim().equals("")) {
 		response.sendRedirect("../product_detail.jsp");
