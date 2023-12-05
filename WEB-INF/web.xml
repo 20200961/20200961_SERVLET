@@ -2,7 +2,7 @@
 <web-app>
     <security-role>
 		<description></description >
-		<role-name>admin</role-name>
+		<role-name>manage</role-name>
 	</security-role>
 	<security-constraint>
 		<display-name>WebMarket Security_01</display-name>
@@ -10,10 +10,12 @@
 			<web-resource-name>WebMarket</web-resource-name>
 			<description></description>
 			<url-pattern>/admin/product_add.jsp</url-pattern>
+            <url-pattern>/admin/index_ad.jsp</url-pattern>
+            <url-pattern>/admin/product_edit.jsp</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>
-			<role-name>admin</role-name>
+            <role-name>manage</role-name>
 		</auth-constraint>
 	</security-constraint>
     
@@ -24,7 +26,16 @@
 			<form-error-page>/login/login_failed.jsp</form-error-page>
 		</form-login-config>
 	</login-config>
+  
+    <servlet>
+		<servlet-name>BoardController</servlet-name>
+		<servlet-class>mvc.controller.Board_controller</servlet-class>
+	</servlet>
 
+	<servlet-mapping>
+		<servlet-name>BoardController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
 
     <error-page>
         <error-code>404</error-code>

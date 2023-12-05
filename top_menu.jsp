@@ -7,14 +7,9 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <a class="dropdown-item" href="#">의류전체</a>
         <a class="dropdown-item" href="#">라이프스타일</a>
-        <a class="dropdown-item" href="#">탑&티셔츠</a>
-        <a class="dropdown-item" href="#">쇼츠</a>
-        <a class="dropdown-item" href="#">팬츠&타이츠</a>
-        <a class="dropdown-item" href="#">드라이핏</a>
-        <a class="dropdown-item" href="#">후디&크루</a>
-        <a class="dropdown-item" href="#">재킷&베스트</a>
-        <a class="dropdown-item" href="#">수영복</a>
-        <a class="dropdown-item" href="#">양말</a>
+        <a class="dropdown-item" href="../sneakers.jsp">스니커즈</a>
+        <a class="dropdown-item" href="../running.jsp">러닝화</a>
+     
         
      </div>
 	</div>
@@ -26,16 +21,12 @@
 	<div class="container">
 		<div class="navbar-header">
             
-			<a class="navbar-brand" href="./index.jsp">홈페이지</a>
-            <a class="navbar-brand" href="index.jsp">상품목록(기본 홈)</a>
-            <a class="navbar-brand" href="./index.jsp">이벤트</a>
-            <a class="navbar-brand" href="./index.jsp">MEN</a>
-            <a class="navbar-brand" href="./index.jsp">WOMEN</a>
-            <a class="navbar-brand" href="./index.jsp">KIDS</a>
-            <a class="navbar-brand" href="./index.jsp">BABY</a>
-            <a class="navbar-brand" href="./index.jsp">SALE</a>
-            <a class="navbar-brand" href="./index.jsp">SNKR</a>
-            <a class="navbar-brand" href="admin/index_ad.jsp">관리자모드</a>
+			<a class="navbar-brand" href="https://www.nike.com/kr?utm_source=Google&utm_medium=PS&utm_campaign=365DIGITAL_Google_SA_Keyword_Main_PC&cp=72646825390_search_&gad_source=1&gclid=Cj0KCQiAgqGrBhDtARIsAM5s0_m4g2F2xbY1sFiSLzHom_mzBEsbZhOsn-APMvvujnX2vyXKcQLVOgYaAiC1EALw_wcB">홈페이지</a>
+            <a class="navbar-brand" href="../index.jsp">기본 홈</a>
+            <a class="navbar-brand" href="../BoardListAction.do?pageNum=1">게시판(고객센터)</a>
+            <a class="navbar-brand" href="../login/login_user.jsp">로그인</a>
+            <a class="navbar-brand" href="../place.jsp">매장찾기</a>
+            <a class="navbar-brand" href="../admin/index_ad.jsp">관리자모드</a>
 		</div>
 	</div>
 </nav>

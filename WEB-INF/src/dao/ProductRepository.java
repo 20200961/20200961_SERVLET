@@ -37,9 +37,55 @@ public class ProductRepository{
 		Vapor.setCondition("New");
         Vapor.setFilename("P3.jpg");
         
+        Product Zion = new Product("P4","Zion 3 PF",169000);
+        Vapor.setDescription("최고의 경기력을 보여주는 농구화");
+		Vapor.setCategory("Basketball shoes");
+		Vapor.setManufacturer("NIKE");
+		Vapor.setUnitsInStock(1500);
+		Vapor.setCondition("New");
+        Vapor.setFilename("P4.jpg");
+        
+        Product Airjordan1 = new Product("P5","Air jordan1 low",139000);
+        Vapor.setDescription("전설적인 조던 스니커즈");
+		Vapor.setCategory("Sneakers");
+		Vapor.setManufacturer("NIKE");
+		Vapor.setUnitsInStock(500);
+		Vapor.setCondition("New");
+        Vapor.setFilename("P5.jpg");
+        
+        Product Zoom = new Product("P6","Zoom vomero 5",219000);
+        Vapor.setDescription("줌 보메로 5를 신고 나만을 위한 새롭고 빠른 길을 개척하세요");
+		Vapor.setCategory("Running");
+		Vapor.setManufacturer("NIKE");
+		Vapor.setUnitsInStock(2000);
+		Vapor.setCondition("New");
+        Vapor.setFilename("P6.jpg");
+        
+        Product Airmax = new Product("P7","Air max pulse",209000);
+        Vapor.setDescription("로드 에어 쿠셔닝이 믿을 수 있는 편안함을 선사합니다");
+		Vapor.setCategory("Running");
+		Vapor.setManufacturer("NIKE");
+		Vapor.setUnitsInStock(8500);
+		Vapor.setCondition("New");
+        Vapor.setFilename("P7.jpg");
+        
+        Product Cortex = new Product("P8","Cortex",119000);
+        Vapor.setDescription("스타일링이 쉬운 컬러와 빈티지한 분위기로 완성된 디자인을 만나보세요");
+		Vapor.setCategory("Sneakers");
+		Vapor.setManufacturer("NIKE");
+		Vapor.setUnitsInStock(10000);
+		Vapor.setCondition("New");
+        Vapor.setFilename("P8.jpg");
+        
         listOfProducts.add(Dunk);
 		listOfProducts.add(Airporce);
 		listOfProducts.add(Vapor);
+        listOfProducts.add(Zion);
+        listOfProducts.add(Airjordan1);
+        listOfProducts.add(Zoom);
+        listOfProducts.add(Airmax);
+        listOfProducts.add(Cortex);
+        
 		// listOfProducts.add(상품명);
 	}
     public Product getProductById(String productId) {

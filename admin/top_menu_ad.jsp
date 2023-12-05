@@ -7,14 +7,9 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <a class="dropdown-item" href="#">의류전체</a>
         <a class="dropdown-item" href="#">라이프스타일</a>
-        <a class="dropdown-item" href="#">탑&티셔츠</a>
-        <a class="dropdown-item" href="#">쇼츠</a>
-        <a class="dropdown-item" href="#">팬츠&타이츠</a>
-        <a class="dropdown-item" href="#">드라이핏</a>
-        <a class="dropdown-item" href="#">후디&크루</a>
-        <a class="dropdown-item" href="#">재킷&베스트</a>
-        <a class="dropdown-item" href="#">수영복</a>
-        <a class="dropdown-item" href="#">양말</a>
+        <a class="dropdown-item" href="./sneakers_ad.jsp">스니커즈</a>
+        <a class="dropdown-item" href="./running_ad.jsp">러닝화</a>
+        
         
      </div>
 	</div>
@@ -27,17 +22,13 @@
 		<div class="navbar-header">
 			<a class="navbar-brand" href="./index.jsp">홈페이지</a>
             <a class="navbar-brand" href="./index.jsp">이벤트</a>
-            <a class="navbar-brand" href="./index.jsp">MEN</a>
-            <a class="navbar-brand" href="./index.jsp">WOMEN</a>
-            <a class="navbar-brand" href="./index.jsp">KIDS</a>
-            <a class="navbar-brand" href="./index.jsp">BABY</a>
-            <a class="navbar-brand" href="./index.jsp">SALE</a>
-            <a class="navbar-brand" href="./index.jsp">SNKR</a>
-            <a class="navbar-brand" href="./index.jsp">회원 보기/추가/수정/삭제</a>
+            <a class="navbar-brand" href="./place_ad.jsp">매장찾기</a>
+            <a class="navbar-brand" href="../member/member_view.jsp">회원 보기</a>
             <a class="navbar-brand" href="index_ad.jsp">상품 보기</a>
             <a class="navbar-brand" href="product_add.jsp">등록</a>
-            <a class="navbar-brand" href="index_ad.jsp">수정/삭제</a>
-            <a class="navbar-brand" href=“../index.jsp">일반모드</a>
+            <a class="navbar-brand" href="product_edit.jsp?edit=update">수정</a>
+            <a class="navbar-brand" href="product_edit.jsp?edit=delete">삭제</a>            
+            <a class="navbar-brand" href="../index.jsp">일반모드</a>
 
 		</div>
 	</div>

@@ -12,7 +12,7 @@
 
 	Class.forName("com.mysql.jdbc.Driver");
 	String myUrl = "jdbc:mysql://localhost/ggouppang_20200961";
-	Connection conn = DriverManager.getConnection(myUrl, "root", "123123");
+	Connection conn = DriverManager.getConnection(myUrl, "root", "1234");
 	try {
         	stm = conn.createStatement();
             conn_state = true;
